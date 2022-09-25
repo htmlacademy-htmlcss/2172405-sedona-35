@@ -7,10 +7,10 @@
 
   <body>
       <header class="main-header">
-        <a class="main-header-logo">
-          <img src="" width="#" height="#" alt="Лого сайта городка Седона">
-        </a>
     <nav class="navigation">
+      <a class="main-header-logo" href="index.html">
+        <img class="main-header-logo" src="" alt="Лого сайта городка Седона">
+      </a>
        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">Главная</a>
@@ -19,7 +19,8 @@
             <a class="navigation-link" href="sedona_info.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link
+            navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
        </ul>
        <ul class="navigation-list navigation-user">
@@ -44,55 +45,69 @@
     </nav>
   </header>
 
-<main>
-<section class="hotel-search">
-  <h1 class="hotel-search-title">Гостиницы Седоны</h1>
-  <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="index.html">
+<main class="main-inner">
+  <header class="inner-header">
+    <h1 class="inner-header-title">Гостиницы Седоны</h1>
+    <ul class="breadcrubms">
+      <li class="breadcrubms-item">
+        <a class="breadcrubms-link" href="index.html">
           <span class="visually-hidden">Главная страница</span>
         </a>
       </li>
-      <li class="navigation-item">
-          <h3 class="navigation-item">Гостиницы</h3>
+      <li class="breadcrubms-item">
+          <a class="navigation-item">Гостиницы</a>
       </li>
     </ul>
-  </nav>
-</section>
+</header>
 
   <section class="hotel-search">
     <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <fieldset>
-        <legend>Инфраструктура</legend>
+    <form class="search-filter" action="https://echo.htmlacademy.ru/courses" method="get">
 
-        <input type="checkbox" id="pool" name="infrastructure">
-        <label for="pool">Бассейн
-        </label><br/>
+      <fieldset class="search-filter-group">
+        <legend class="search-filter-title">Инфраструктура</legend>
+        <ul class="search-filter-list">
+          <li class="search-filter-item">
+            <label class="control">
+        <input class="control-input" type="checkbox" id="pool" name="pool" checked>
+        <label for="pool">Бассейн</label>
+        </li>
 
-        <input type="checkbox" id="parking" name="infrastructure">
-        <label for="parking">Парковка</label><br/>
+        <li class="search-filter-item">
+          <label class="control">
+        <input class="control-input" type="checkbox" id="parking" name="parking" checked>
+        <label for="parking">Парковка</label></li>
 
-        <input type="checkbox" id="wifi" name="infrastructure">
+        <li class="search-filter-item">
+          <label class="control">
+        <input class="control-input" type="checkbox" id="wifi" name="wi-fi">
         <label for="wifi">Wi-fi</label>
+      </li>
+      </ul>
       </fieldset>
-      <fieldset>
-        <legend>Тип жилья</legend>
 
-        <input type="checkbox" id="hotel" name="hotel-type">
-        <label for="hotel">Гостиница
-        </label><br/>
+      <fieldset class="search-filter-group">
+        <legend class="search-filter-title">Тип жилья</legend>
 
-        <input type="checkbox" id="motel" name="hotel-type">
-        <label for="motel">Мотель</label><br/>
+        <ul class="search-filter-list">
+          <li class="search-filter-item">
+            <label class="control">
+        <input class="control-input" type="checkbox" id="hotel" name="hotel" checked>
+        <label for="hotel">Гостиница</label></li>
 
-        <input type="checkbox" id="apartments" name="hotel-type">
-        <label for="apartments">Апартаменты</label>
+        <li class="search-filter-item">
+          <label class="control">
+      <input class="control-input" type="checkbox" id="motel" name="motel">
+        <label for="motel">Мотель</label></li>
 
+          <li class="search-filter-item">
+            <label class="control">
+        <input class="control-input" type="checkbox" id="apartments" name="apartments">
+        <label for="apartments">Апартаменты</label></li>
       </fieldset>
+
       <fieldset>
-        <legend>Стоимость,₽</legend>
+        <legend class="search-filter-group">Стоимость,₽</legend>
 
         <label class="visually-hidden" for="price-from">от
         </label>
@@ -145,7 +160,7 @@
      <p class="accomodation-description">Гостиница</p>
      <p class="accomodation-price">От 4000 ₽</p>
      <a class="button" href="#">ПОДРОБНЕЕ</a>
-     <a class="button" href="#">В ИЗБРАННОЕ</a>
+     <button class="favorites-button favorites-not">В ИЗБРАННОЕ</button>
      <p class="rating">РЕЙТИНГ: 8,5</p>
    </li>
 
@@ -155,7 +170,7 @@
      <p class="accomodation-description">Гостиница</p>
      <p class="accomodation-price">От 5000 ₽</p>
      <a class="button" href="#">ПОДРОБНЕЕ</a>
-     <a class="button" href="#">В ИЗБРАННОЕ</a>
+     <button class="favorites-button favorites-yes">В ИЗБРАННОМ</button>
      <p class="rating">РЕЙТИНГ: 9,2</p>
    </li>
 
@@ -165,7 +180,7 @@
      <p class="accomodation-description">Гостиница</p>
      <p class="accomodation-price">От 2500 ₽</p>
      <a class="button" href="#">ПОДРОБНЕЕ</a>
-     <a class="button" href="#">В ИЗБРАННОЕ</a>
+     <button class="favorites-button favorites-not">В ИЗБРАННОЕ</button>
      <p class="rating">РЕЙТИНГ: 6,9</p>
    </li>
 
@@ -175,7 +190,7 @@
      <p class="accomodation-description">Гостиница</p>
      <p class="accomodation-price">От 1500 ₽</p>
      <a class="button" href="#">ПОДРОБНЕЕ</a>
-     <a class="button" href="#">В ИЗБРАННОЕ</a>
+     <button class="favorites-button favorites-not">В ИЗБРАНОЕ</button>
      <p class="rating">РЕЙТИНГ: 5,0</p>
    </li>
  </ul>
