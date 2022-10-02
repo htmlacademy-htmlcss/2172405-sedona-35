@@ -1,0 +1,22 @@
+
+body {
+  background-color: tomato;
+}
+@font-face {
+  font-family: "ptsans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("ptsans-400.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "ptsans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("ptsans-700.woff2") format("woff2")
+}
+
+body {
+  font-family: "ptsans", "Arial";
+  font-weight: 400;
+}
