@@ -193,3 +193,62 @@ body {
   text-transform: none;
   color: #FFFFFF;
 }
+
+.hotels-found {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotel-name {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  color: #000000;
+}
+
+.favorites-button {
+  background-color: #756157;
+  border: none;
+  color: #FFFFFF;
+  size: 140px 36px;
+  padding: 8px 26px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.favorites-yes {
+  background-color: #7DB54F;
+}
+
+.favorites-not {
+  background-color: #82B3D3;
+}
+
+.rating {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotels {
+  background-color: #FFFFFF;
+}
