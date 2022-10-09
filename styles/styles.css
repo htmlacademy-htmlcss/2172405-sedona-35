@@ -45,6 +45,16 @@ body {
   text-transform: none;
 }
 
+.button-search {
+  background-image: url("../images/vectors/search.svg");
+  background-repeat: no-repeat;
+}
+
+.button-like {
+  background-image: url("../images/vectors/favotites.svg");
+  background-repeat: no-repeat;
+}
+
 .header-button {
   background-color: #756157;
   border: none;
@@ -61,7 +71,7 @@ body {
 .hero-image {
   color: #000000;
   background-color: #F2F2F2;;
-  background-image: url("../images/index/index-background.jpg"), url("../images/vectors/vector.svg");
+  background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat
 }
@@ -164,6 +174,24 @@ body {
   color: #000000;
 }
 
+.vk-button {
+  background-image: url("../images/vectors/vk.svg");
+  background-size: 24px 14px;
+  background-repeat: no-repeat;
+}
+
+.telegram-button {
+  background-image: url("../images/vectors/telegram.svg");
+  background-size: 18px 15px;
+  background-repeat: no-repeat;
+}
+
+.youtube-button {
+  background-image: url("../images/vectors/youtube.svg");
+  background-size: 22px 17px;
+  background-repeat: no-repeat;
+}
+
 .sedona-hotels {
   color: #FFFFFF;
   background-color: #000000;
@@ -201,6 +229,33 @@ body {
   text-decoration: none;
   text-transform: none;
   color: #FFFFFF;
+}
+
+.button-hotels-search {
+  background-color: #82B3D3;
+  border: none;
+  color: #FFFFFF;
+  size: 191px 36px;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.button-hotels-search-1 {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  size: 191px 36px;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hotels-found {
@@ -256,6 +311,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.star {
+  color: #83B3D3;
+  letter-spacing: 5px;
 }
 
 .hotels {
