@@ -58,10 +58,10 @@ body {
   border-radius: 4px;
 }
 
-.main-page {
+.hero-image {
   color: #000000;
   background-color: #F2F2F2;;
-  background-image: url("../images/index/index-background.jpg");
+  background-image: url("../images/index/index-background.jpg"), url("../images/vectors/vector.svg");
   background-size: 100% auto;
   background-repeat: no-repeat
 }
@@ -132,13 +132,22 @@ body {
 
 .newsletter-button {
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  border: none;
   color: #FFFFFF;
+  size: 375px 52px;
+  padding: 8px 50px 8px 50px;
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  background-color: #82B3D3;
+  size: 232px 52px;
 }
 
 .footer-social-list {
