@@ -16,12 +16,13 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-
   background-color: #F2F2F2;
   color: #333333;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .main-header {
@@ -34,7 +35,7 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -70,10 +71,18 @@ body {
 
 .hero-image {
   color: #000000;
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
   background-image: url("../images/index/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.main-message {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .advantages-list {
@@ -82,7 +91,7 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -105,7 +114,7 @@ body {
 }
 
 .title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -119,7 +128,7 @@ body {
 
 
 .subtitle {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -141,7 +150,7 @@ body {
 }
 
 .newsletter-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -165,7 +174,7 @@ body {
 }
 
 .contacts-phone {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 46px;
@@ -201,7 +210,7 @@ body {
 }
 
 .inner-header-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -210,7 +219,7 @@ body {
 }
 
 .breadcrubms-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -220,8 +229,54 @@ body {
   color: #FFFFFF;
 }
 
+.price {
+  margin-bottom: 20px;
+}
+.range-slider {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 287px;
+  margin-bottom: 20px;
+}
+
+.long-line, .short-line, .min, .max  {
+  position: absolute;
+  display: block;
+}
+
+.short-line {
+  top: 8px;
+  height: 4px;
+  background-color: #FFFFFF;
+  width: 226px;
+  z-index: 1;
+}
+
+.long-line {
+  top: 8px;
+  height: 4px;
+  background-color: #FFFFFF;
+  width: 287px;
+  opacity: 30%;
+  z-index: 0;
+}
+.min {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.max {
+  left: 220px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
 .search-filter-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -259,7 +314,7 @@ body {
 }
 
 .hotels-found {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -270,7 +325,7 @@ body {
 }
 
 .hotel-name {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -303,7 +358,7 @@ body {
 }
 
 .rating {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
