@@ -169,6 +169,52 @@ body {
   size: 232px 52px;
 }
 
+.pagination-section {
+  margin: 80px 0 60px;
+  padding: 0;
+  min-width: 1060px;
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  min-width: 60px;
+  min-height: 60px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-hidden {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 12px 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .footer-social-list {
   list-style-type: none;
 }
@@ -324,6 +370,7 @@ body {
   color: #000000;
 }
 
+
 .hotel-name {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -358,6 +405,11 @@ body {
 }
 
 .rating {
+  display: block;
+  background-color: #F2F2F2;
+  border: none;
+  size: 140px 37px;
+  padding: 8px 22px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -368,9 +420,18 @@ body {
   color: #000000;
 }
 
-.star {
-  color: #83B3D3;
-  letter-spacing: 5px;
+.four-stars {
+  background-image: url(../images/vectors/4-stars.svg);
+  background-repeat: no-repeat;
+}
+
+.three-stars {
+  background-image: url(../images/vectors/3-stars.svg);
+  background-repeat: no-repeat;
+}
+.two-stars {
+  background-image: url(../images/vectors/2-stars.svg);
+  background-repeat: no-repeat;
 }
 
 .hotels {
