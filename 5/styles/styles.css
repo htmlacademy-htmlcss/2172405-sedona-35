@@ -24,6 +24,12 @@ html {
   height: 100%;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0 auto;
   display: flex;
@@ -153,16 +159,21 @@ body {
   list-style-type: none;
 }
 
+
+.advantages-first-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-item {
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
   width: 400px;
   height: 384px;
-}
-
-.atvantages-pic {
-  display: block;
 }
 
 .advantages-title {
@@ -180,12 +191,12 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-light-blue-1 {
+.advantages-lighter-blue {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
 
-.advantages-light-blue-2 {
+.advantages-light-blue {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
