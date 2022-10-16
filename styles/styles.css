@@ -11,27 +11,73 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2")
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
   color: #333333;
-  margin: 0 auto;
   width: 1200px;
 }
+
+/* Header */
 
 .main-header {
   background-color: #FFFFFF;
   color: #000000;
 }
 
+.main-header-logo {
+  margin-right: 30px;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .navigation-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 446px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-left-item {
+  padding-right: 32px;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -69,6 +115,8 @@ body {
   border-radius: 4px;
 }
 
+/* Главная страница */
+
 .hero-image {
   display: block;
   width: 1200px;
@@ -83,7 +131,7 @@ body {
 .hero-bottom-zigzag {
   background-image: url(../images/vectors//vector.svg);
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position:center bottom;
   height: 75px;
 }
 
@@ -96,8 +144,25 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   text-align: center;
   list-style-type: none;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 400px;
+  height: 384px;
+}
+
+.atvantages-pic {
+  display: block;
 }
 
 .advantages-title {
@@ -109,6 +174,8 @@ body {
 }
 
 .advantages-blue {
+  display: flex;
+  flex-direction: column;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -123,6 +190,21 @@ body {
   color: #000000;
 }
 
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3,340px);
+  gap: 20px;
+}
+
+.hotel-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 .title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -132,10 +214,18 @@ body {
   text-transform: uppercase;
 }
 
+.appointment {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
 .title-white {
   color: #FFFFFF;
 }
 
+.title-black {
+  color: #000000;
+}
 
 .subtitle {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -144,19 +234,39 @@ body {
   line-height: 26px;
   text-align: center;
   text-transform: none;
+  margin-bottom: 54px;
 }
 
 .subtitle-white {
   color: #FFFFFF;
 }
 
+.subtitle-black {
+  color: #000000;
+}
+
+.appointment {
+  text-align: center;
+}
+
 .newsletter {
+  display: block;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url(../images/index/index-subscribe-1.jpg);
   background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 96px 258px 104px 258px;
+}
+
+.newsletter-no-pic {
+  display: block;
+  color: #000000;
+  background-color: #FFFFFF;
+  background-size: 100% auto;
+  padding: 96px 258px 104px 258px;
+  margin: 0;
 }
 
 .newsletter-button {
@@ -179,90 +289,26 @@ body {
   size: 232px 52px;
 }
 
-.pagination-section {
-  margin: 80px 0 60px;
-  padding: 0;
-  min-width: 1060px;
+/* Каталог */
+
+
+.sedona-hotels-filter {
   display: flex;
-  list-style-type: none;
-}
-
-.pagination-link {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  padding: 12px 24px;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  min-width: 60px;
-  min-height: 60px;
-  display: block;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 8px;
-}
-
-
-.pagination-current {
-  color: #000000;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-}
-
-.pagination-hidden {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  padding: 12px 21px;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.footer-social-list {
-  list-style-type: none;
-}
-
-.contacts-phone {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 46px;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-}
-
-.vk-button {
-  background-image: url("../images/vectors/vk.svg");
-  background-size: 24px 14px;
-  background-repeat: no-repeat;
-}
-
-.telegram-button {
-  background-image: url("../images/vectors/telegram.svg");
-  background-size: 18px 15px;
-  background-repeat: no-repeat;
-}
-
-.youtube-button {
-  background-image: url("../images/vectors/youtube.svg");
-  background-size: 22px 17px;
-  background-repeat: no-repeat;
-}
-
-.sedona-hotels {
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url("../images/catalog/catalog-background.jpg");
+  margin: 0 auto;
   color: #FFFFFF;
   background-color: #000000;
-  background-image: url("../images/catalog/catalog-background.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 70px 40px;
+  padding: 0;
+  min-width: 1060px;
 }
 
 .inner-header-title {
@@ -274,6 +320,7 @@ body {
   text-transform: none;
 }
 
+
 .breadcrubms-link {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -283,6 +330,10 @@ body {
   text-decoration: none;
   text-transform: none;
   color: #FFFFFF;
+}
+
+.hotels-catalog {
+  padding-left: 30px;
 }
 
 .price {
@@ -445,4 +496,127 @@ body {
 
 .hotels {
   background-color: #FFFFFF;
+  margin: 0;
+}
+
+.pagination-section {
+  padding-left: 70px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  min-width: 1060px;
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  min-width: 60px;
+  min-height: 60px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-hidden {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 12px 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Footer */
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+  background-color: #FFFFFF;
+}
+
+.navigation-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1060px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 142px;
+}
+
+.footer-phone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 800px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contacts-phone {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.vk-button {
+  background-image: url("../images/vectors/vk.svg");
+  background-size: 24px 14px;
+  background-repeat: no-repeat;
+}
+
+.telegram-button {
+  background-image: url("../images/vectors/telegram.svg");
+  background-size: 18px 15px;
+  background-repeat: no-repeat;
+}
+
+.youtube-button {
+  background-image: url("../images/vectors/youtube.svg");
+  background-size: 22px 17px;
+  background-repeat: no-repeat;
 }
