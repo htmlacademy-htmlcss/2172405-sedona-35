@@ -28,6 +28,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto
 }
 
 body {
@@ -149,7 +151,7 @@ body {
   margin: 0;
 }
 
-.advantages-list {
+.advantages {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -160,14 +162,14 @@ body {
 }
 
 
-.advantages-first-row {
+.advantages-list {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
 }
 
-.advantages-item {
+.advantages-wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -200,6 +202,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
+
 
 .hotel-list {
   display: grid;
