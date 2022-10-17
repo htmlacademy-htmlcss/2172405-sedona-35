@@ -310,11 +310,16 @@ body {
   background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.6);
   border: none;
-  size: 452px 52px;
+  width: 452px;
   padding: 14px 20px;
   border-radius: 4px 0 0 4px;
   margin: 0%;
 }
+
+.newsletter-email-gray {
+  background-color: #F2F2F2;
+}
+
 
 .newsletter-form-button {
   display: flex;
@@ -586,48 +591,36 @@ body {
 /* Footer */
 
 .main-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 1060px;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
   background-color: #FFFFFF;
 }
 
-.navigation-footer {
+.main-footer-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 1060px;
+  margin: 0 auto;
 }
 
 .footer-social-list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 142px;
 }
 
+.footer-social-item {
+width: 47px;
+height: 40px;
+}
+
 .footer-phone {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 800px;
-  padding: 0;
-  margin: 0;
+  width: 331px;
+  margin: 0 auto;
 }
 
 .footer-logo {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  width: 115px;
 }
 
 .contacts-phone {
@@ -638,22 +631,4 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
-}
-
-.vk-button {
-  background-image: url("../images/vectors/vk.svg");
-  background-size: 24px 14px;
-  background-repeat: no-repeat;
-}
-
-.telegram-button {
-  background-image: url("../images/vectors/telegram.svg");
-  background-size: 18px 15px;
-  background-repeat: no-repeat;
-}
-
-.youtube-button {
-  background-image: url("../images/vectors/youtube.svg");
-  background-size: 22px 17px;
-  background-repeat: no-repeat;
 }
