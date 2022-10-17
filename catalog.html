@@ -41,7 +41,7 @@
             </ul>
          </nav>
       </header>
-      <main class="main-inner main-container">
+      <main class="hotels-catalog">
          <section class="sedona-hotels-filter">
             <header class="inner-header">
                <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -120,14 +120,19 @@
             </section>
          </section>
          <section class="hotels">
-            <h3 class="visually-hidden">Найденные гостиницы</h3>
-            <div>
-               <p class="hotels-found">Найдено гостиниц: <span>38</span></p>
+            <div class="sorting">
+              <h3 class="visually-hidden">Найденные гостиницы</h3>
+              <div class="hotels-found">
+               <p>Найдено гостиниц: <span>38</span></p>
+              </div>
+              <div class="sorting-list">
                <select name="preferences" aria-label="Сортировка">
                   <option value="cheap-first">Сначала дешевые</option>
                   <option value="expensive-first">Сначала дорогие</option>
                   <option value="popular-first">Сначала популярные</option>
                </select>
+              </div>
+              <div class="sorting-view">
                <a class="button button-framed" href="#">
                <span class="visually-hidden">Показать в виде иконок</span>
                </a>
@@ -137,6 +142,7 @@
                <a class="button" href="#">
                <span class="visually-hidden">Показать в виде списка</span>
                </a>
+              </div>
             </div>
             <section class="hotels-catalog">
                <ul class="hotel-list">
@@ -190,7 +196,7 @@
                   </li>
                </ul>
             </section>
-            <div>
+            <div class="pagination">
                <ul class="pagination-section">
                   <li class="pagination-item">
                      <a class="pagination-link pagination-current" href="#">1</a>
