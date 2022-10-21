@@ -13,28 +13,34 @@
         <a href="index.html">
           <div>
             <img class="main-header-logo" src="images/Vectors/logo-sedona.svg" width="140" height="70"
-              alt="Лого города Седона">
+              alt="Лого города Седона.">
           </div>
         </a>
         <ul class="navigation-list">
           <li class="navigation-left-item">
-            <a class="navigation-link" href="index">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-left-item">
-            <a class="navigation-link" href="sedona-info.html">О Седоне</a>
+            <a class="navigation-link" href="">О Седоне</a>
           </li>
           <li class="navigation-left-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-right-item">
             <a class="button-search" href="#">
+              <div>
+                <img class="button-search" src="images/vectors/searchh.svg" alt="иконка поиска.">
+              </div>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-right-item">
             <a class="button-like" href="#">
+              <div>
+                <img class="button-search" src="images/vectors/favotitess.svg" alt="иконка поиска.">
+              </div>
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -51,6 +57,9 @@
           <ul class="breadcrubms">
             <li class="breadcrubms-item">
               <a class="breadcrubms-link" href="index.html">
+                <div>
+                  <img class="breadcrumbs-icon" src="images/vectors/breadcrumb.svg" alt="иконка главной страницы">
+                </div>
                 <span class="visually-hidden">Главная страница</span>
               </a>
             </li>
@@ -62,8 +71,9 @@
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
           <form class="search-filter" action="https://echo.htmlacademy.ru/courses" method="get">
-            <fieldset class="search-filter-group">
-              <legend class="search-filter-title">Инфраструктура</legend>
+            <div class="infrastructure-accomodation">
+            <fieldset class="infrastructure">
+              <legend class="search-filter-title">Инфраструктура:</legend>
               <ul class="search-filter-list">
                 <li class="search-filter-item">
                   <label class="control" for="pool">Бассейн
@@ -82,8 +92,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search-filter-group">
-              <legend class="search-filter-title">Тип жилья</legend>
+            <fieldset class="accomodation">
+              <legend class="search-filter-title">Тип жилья:</legend>
               <ul class="search-filter-list">
                 <li class="search-filter-item">
                   <label class="control" for="hotel">Гостиница
@@ -102,9 +112,11 @@
                   </label>
                 </li>
               </ul>
+            </div>
             </fieldset>
+            <div class="price-slider">
             <fieldset class="price">
-              <legend class="search-filter-title">Стоимость, ₽</legend>
+              <legend class="search-filter-title">Стоимость, ₽:</legend>
               <label class="visually-hidden" for="price-from">от</label>
               <input type="text" id="price-from" placeholder="0" name="price">
               <label class="visually-hidden" for="price-to">до</label>
@@ -116,9 +128,10 @@
               <div class="min"></div>
               <div class="max"></div>
             </div>
-            <div>
+          </div>
+            <div class="filter-buttons">
               <button class="button-hotels-search" type="submit">Применить</button>
-              <button class="button-hotels-search-1" type="reset">Сбросить</button>
+              <button class="button-hotels-search-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -126,24 +139,31 @@
       <section class="hotels">
         <div class="sorting">
           <h3 class="visually-hidden">Найденные гостиницы</h3>
-          <div class="hotels-found">
-            <p>Найдено гостиниц: <span>38</span></p>
-          </div>
+            <p class="hotels-found">Найдено гостиниц: <span>38</span></p>
           <div class="sorting-list">
-            <select name="preferences" aria-label="Сортировка">
+            <select class="sorting-list-preferences" name="preferences" aria-label="Сортировка">
               <option value="cheap-first">Сначала дешевые</option>
               <option value="expensive-first">Сначала дорогие</option>
               <option value="popular-first">Сначала популярные</option>
             </select>
           </div>
           <div class="sorting-view">
-            <a class="button button-framed" href="#">
+            <a class="sorting-view-button sorting-view-framed" href="#">
+              <div class="view-icons">
+                <img src="images/vectors/view-icons.svg" alt="Показать в виде иконок.">
+              </div>
               <span class="visually-hidden">Показать в виде иконок</span>
             </a>
-            <a class="button" href="#">
+            <a class="sorting-view-button" href="#">
+              <div class="view-gallery">
+                <img src="images/vectors/view-gallery.svg" alt="Показать в виде галлереи.">
+              </div>
               <span class="visually-hidden">Показать в виде галлереи</span>
             </a>
-            <a class="button" href="#">
+            <a class="sorting-view-button" href="#">
+              <div class="view-list">
+                <img src="images/vectors/view-list.svg" alt="Показать в виде списка.">
+              </div>
               <span class="visually-hidden">Показать в виде списка</span>
             </a>
           </div>
@@ -215,10 +235,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <span class="pagination-item pagination-hidden">...</span>
+              <div class="pagination-item pagination-hidden">...</div>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
