@@ -761,8 +761,12 @@ padding: 0;
 margin-right: 25px;
 }
 
+.footer-social-item:last-child {
+  margin-right: 0;
+  }
+
 .footer-phone {
-  width: 331px;
+  width: 340px;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 30px;
