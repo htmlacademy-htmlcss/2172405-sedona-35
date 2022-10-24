@@ -332,8 +332,7 @@ body {
   background-color: #F2F2F2;
 }
 
-
-.newsletter-form-button {
+.newsletter-form {
   display: flex;
   flex-direction: row;
 }
