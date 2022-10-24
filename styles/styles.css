@@ -374,6 +374,7 @@ body {
 }
 
 .breadcrubms {
+  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
@@ -388,7 +389,16 @@ body {
   padding-bottom: 3px;
 }
 
-
+.arrow {
+  position: absolute;
+  top: 27px;
+  left: 21px;
+  width: 6px;
+  height: 6px;
+  border-top: 1.8px solid #FFFFFF;
+  border-right: 1.8px solid #FFFFFF;
+  transform: rotate(45deg);
+}
 
 .breadcrubms-link {
   font-family: "PT Sans", "Arial", sans-serif;
