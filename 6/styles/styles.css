@@ -435,6 +435,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrubms {
+  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
@@ -449,18 +450,17 @@ color: rgba(255, 255, 255, 0.3);
   padding-bottom: 3px;
 }
 
-.breadcrubms-link::before {
+.breadcrubms-link-next::before {
   position: absolute;
   content: "";
   width: 6px;
   height: 6px;
   border-top: 1.8px solid #FFFFFF;
   border-right: 1.8px solid #FFFFFF;
-  transform: translateX(22px) translateY(7px) rotate(45deg) ;
+  transform: translateX(-19px) translateY(7px) rotate(45deg);
 }
 
 .breadcrubms-link-next {
-  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
