@@ -409,7 +409,6 @@ color: rgba(255, 255, 255, 0.3);
 /* Каталог */
 
 
-
 .sedona-hotels-filter {
   padding: 30px 70px 70px 70px;
   max-width: 1200px;
@@ -444,23 +443,26 @@ color: rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
   list-style-type: none;
 }
+
 .breadcrumbs-icon {
-  padding-right: 28px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  display: block;
+  background-image: url(../images/vectors/breadcrumb.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-right: 40px;
 }
 
-.breadcrubms-link-next::before {
+
+.breadcrubms-link::after {
+
   position: absolute;
   content: "";
-  width: 6px;
-  height: 6px;
-  border-top: 1.8px solid #FFFFFF;
-  border-right: 1.8px solid #FFFFFF;
-  transform: translateX(-19px) translateY(7px) rotate(45deg);
+  background-image: url(../images/vectors/breadcrumb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.breadcrubms-link-next {
+.breadcrubms-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
