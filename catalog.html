@@ -113,10 +113,12 @@
             <div class="price-slider">
               <fieldset class="price">
                 <legend class="search-filter-title">Стоимость, ₽:</legend>
+                <div class="filter-price">
                 <label class="visually-hidden" for="price-from">от</label>
-                <input type="text" id="price-from" placeholder="0" name="price">
+                <input class="search-filter-field" type="text" id="price-from" placeholder="0" name="price">
                 <label class="visually-hidden" for="price-to">до</label>
-                <input type="text" id="price-to" placeholder="9000" name="price">
+                <input class="search-filter-field search-filter-field-right" type="text" id="price-to" placeholder="9000" name="price">
+              </div>
               </fieldset>
               <div class="range-slider">
                 <div class="long-line"></div>
@@ -144,7 +146,7 @@
             </select>
           </div>
           <div class="sorting-view">
-            <a class="sorting-view-button sorting-view-current" href="#">
+            <a class="sorting-view-button" href="#">
               <div class="view-icons">
                 <img src="images/vectors/view-iconss.svg" alt="Показать в виде иконок.">
               </div>
@@ -176,9 +178,7 @@
                 <p class="accomodation-price">От 4000 ₽</p>
                 <a class="favorites-button" href="#">Подробнее</a>
                 <a class="favorites-button favorites-not" href="#">В избранное</a>
-                <div class="hotel-stars four-stars">
-                  <img src="images/vectors/4-stars.svg" alt="две звезды">
-                </div>
+                <p class="hotel-stars-raiting four-stars"><span class="visually-hidden">Звездность отеля</span></p>
                 <p class="rating">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -192,9 +192,7 @@
                 <p class="accomodation-price">От 5000 ₽</p>
                 <a class="favorites-button" href="#">Подробнее</a>
                 <a class="favorites-button favorites-yes" href="#">В избранном</a>
-                <div class="hotel-stars four-stars">
-                  <img src="images/vectors/4-stars.svg" alt="две звезды">
-                </div>
+                <p class="hotel-stars-raiting four-stars"><span class="visually-hidden">Звездность отеля</span></p>
                 <p class="rating">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -208,9 +206,7 @@
                 <p class="accomodation-price">От 2500 ₽</p>
                 <a class="favorites-button" href="#">Подробнее</a>
                 <a class="favorites-button favorites-not" href="#">В избранное</a>
-                <div class="hotel-stars three-stars">
-                  <img src="images/vectors/3-stars.svg" alt="три звезды.">
-                </div>
+                <p class="hotel-stars-raiting three-stars"><span class="visually-hidden">Звездность отеля</span></p>
                 <p class="rating">Рейтинг: 6,9</p>
               </div>
             </li>
@@ -224,9 +220,7 @@
                 <p class="accomodation-price">От 1500 ₽</p>
                 <a class="favorites-button" href="#">Подробнее</a>
                 <a class="favorites-button favorites-not" href="#">В избранное</a>
-                <div class="hotel-stars two-stars">
-                  <img src="images/vectors/2-stars.svg" alt="две звезды.">
-                </div>
+                <p class="hotel-stars-raiting two-stars"><span class="visually-hidden">Звездность отеля</span></p>
                 <p class="rating">Рейтинг: 5,0</p>
               </div>
             </li>
