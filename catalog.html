@@ -71,40 +71,50 @@
                 <legend class="search-filter-title">Инфраструктура:</legend>
                 <ul class="search-filter-list">
                   <li class="search-filter-item">
-                    <label class="control" for="pool">Бассейн
-                      <input class="control-input" type="checkbox" id="pool" name="pool" checked>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="search-filter-item">
-                    <label class="control" for="parking">Парковка
-                      <input class="control-input" type="checkbox" id="parking" name="parking" checked>
+                    <label class="control">
+                      <input class=" visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="search-filter-item">
-                    <label class="control" for="wifi">Wi-fi
-                      <input class="control-input" type="checkbox" id="wifi" name="wi-fi">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="accomodation">
-                <legend class="search-filter-title">Тип жилья:</legend>
+                <legend class="search-filter-title">Тип Жилья:</legend>
                 <ul class="search-filter-list">
                   <li class="search-filter-item">
-                    <label class="control" for="hotel">Гостиница
-                      <input class="control-input" type="radio" id="hotel" name="accomodation-type" value="hotel"
-                        checked>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="accomodation-type" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="search-filter-item">
-                    <label class="control" for="motel">Мотель
-                      <input class="control-input" type="radio" id="motel" name="accomodation-type" value="motel">
+                    <label class="control" for="motel">
+                      <input class="visually-hidden control-input" type="radio" name="accomodation-type" value="motel" >
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="search-filter-item">
-                    <label class="control" for="apartments">Апартаменты
-                      <input class="control-input" type="radio" id="apartments" name="accomodation-type"
-                        value="apartments">
+                    <label class="control" for="apartments">
+                      <input class="visually-hidden control-input" type="radio" name="accomodation-type" value="apartments" >
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -115,18 +125,21 @@
                 <legend class="search-filter-title">Стоимость, ₽:</legend>
                 <div class="filter-price">
                 <label class="visually-hidden" for="price-from">от</label>
-                <input class="search-filter-field" type="text" id="price-from" placeholder="0" name="price">
+                <input class="search-filter-field" type="number" id="price-from" placeholder="0" name="price-min">
                 <label class="visually-hidden" for="price-to">до</label>
-                <input class="search-filter-field search-filter-field-right" type="text" id="price-to" placeholder="9000" name="price">
+                <input class="search-filter-field search-filter-field-right" type="number" id="price-to" placeholder="9000" name="price-max">
               </div>
-              </fieldset>
+
               <div class="range-slider">
-                <div class="long-line"></div>
-                <div class="short-line"></div>
-                <div class="min"></div>
-                <div class="max"></div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 208px">
+                    <button type="button" class="range-toggle toggle-min"></button>
+                    <button type="button" class="range-toggle toggle-max"></button>
+                  </div>
+                </div>
               </div>
             </div>
+          </fieldset>
             <div class="filter-buttons">
               <button class="button-hotels-search" type="submit">Применить</button>
               <button class="button-hotels-search-reset" type="reset">Сбросить</button>
@@ -146,22 +159,13 @@
             </select>
           </div>
           <div class="sorting-view">
-            <a class="sorting-view-button" href="#">
-              <div class="view-icons">
-                <img src="images/vectors/view-iconss.svg" alt="Показать в виде иконок.">
-              </div>
+            <a class="sorting-view-button view-icons" href="#">
               <span class="visually-hidden">Показать в виде иконок</span>
             </a>
-            <a class="sorting-view-button" href="#">
-              <div class="view-gallery">
-                <img src="images/vectors/view-galleryy.svg" alt="Показать в виде галлереи.">
-              </div>
+            <a class="sorting-view-button view-gallery" href="#">
               <span class="visually-hidden">Показать в виде галлереи</span>
             </a>
-            <a class="sorting-view-button" href="#">
-              <div class="view-list">
-                <img src="images/vectors/view-listt.svg" alt="Показать в виде списка.">
-              </div>
+            <a class="sorting-view-button view-list" href="#">
               <span class="visually-hidden">Показать в виде списка</span>
             </a>
           </div>
@@ -256,6 +260,7 @@
         <div class="newsletter-form-button">
           <div class="newsletter-form-button">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email"></label>
               <input class="newsletter-email newsletter-email-gray" placeholder="Ваш email" type="email"
                 name="newsletter-email" id="newsletter-email" required>
             <button class="newsletter-button subscribe-button">Подписаться</button>
