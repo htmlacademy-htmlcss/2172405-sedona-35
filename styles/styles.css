@@ -689,12 +689,13 @@ margin: 0;
   }
 
 .control:hover .control-mark,
-.control:hover .search-filter-item {
+.control:hover .control-label {
 opacity: 60%;
 }
 
-.control:active .control-mark {
-  border: 2px solid #83B3D3;
+.control:active .control-mark,
+.control:active .control-label {
+  opacity: 30%;
   }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
@@ -820,12 +821,15 @@ fieldset {
 
 .button-hotels-search-reset:focus {
 border: 3px solid #83B3D3;
-
+padding-top: 5px;
 }
 
 .button-hotels-search-reset:active {
   color: rgba(255, 255, 255, 0.3);
-  border: 3px solid #83B3D3;
+}
+
+.button-hotels-search-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .hotels-found {
