@@ -791,6 +791,7 @@ fieldset {
 .button-hotels-search:hover,
 .button-hotels-search:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .button-hotels-search:active {
@@ -823,6 +824,7 @@ fieldset {
 .button-hotels-search-reset:focus {
 border: 3px solid #83B3D3;
 padding-top: 5px;
+outline: none;
 }
 
 .button-hotels-search-reset:active {
