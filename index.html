@@ -196,7 +196,40 @@
           </section>
         </div>
       </footer>
-    </div>
+<div class="modal-container">
+  <div class="modal modal-search">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="field-group">
+          <p class="input-title input-title-arrival">Дата Заезда</p>
+            <label class="visually-hidden" for="arrival-date">Дата Заезда</label>
+            <input class="input-field input-field-arrival-departure" type="text" id="arrival-date" name="arrival-date">
+        </div>
+        <div class="field-group">
+          <p class="input-title input-title-departure">Дата Выезда</p>
+          <label class="visually-hidden" for="departure-date">Дата Выезда</label>
+          <input class="input-field input-field-arrival-departure" type="text" id="adeparture-date" name="departure-date">
+        </div>
+        <div class="field-group">
+          <p class="input-title input-title-grown-ups">Взрослые</p>
+          <label class="visually-hidden" for="grown-ups">Взрослые</label>
+          <input class="input-field input-field-grown-ups-kids" type="text" id="grown-ups" name="grown-ups">
+        </div>
+        <div class="field-group">
+          <p class="input-title input-field-grown-ups-kids">Дети</p>
+          <label class="visually-hidden" for="kids">Дети</label>
+          <input class="input-field input-content-kids" type="text" id="kids" name="kids">
+        </div>
+        <button class="search-form-button" type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+ </div>
+</div>
   </body>
 
 </html>
