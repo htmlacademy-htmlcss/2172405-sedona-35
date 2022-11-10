@@ -87,6 +87,7 @@ body {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
   padding-left: 168px;
@@ -107,7 +108,6 @@ body {
 .navigation-user {
   justify-content: flex-end;
   width: 400px;
-  margin-left: auto;
 }
 
 .navigation-link {
@@ -123,6 +123,11 @@ body {
   background-color: transparent;
 }
 
+.navigation-link:focus {
+  outline: none;
+  opacity: 50%;
+}
+
 .navigation-link-current {
   position: relative;
 }
@@ -132,7 +137,7 @@ body {
   top: auto;
   content: "";
   height: 2px;
-  width: calc(100% - 40px);
+  width: calc(100% - 32px);
   bottom: 0;
   background-color: #756257;
   z-index: 1;
@@ -168,7 +173,7 @@ body {
   display: inline-block;
   background-color: #756157;
   border: none;
-  max-width: 160px;
+  width: 160px;
   padding: 8px 34px;
   margin-left: 20px;
   text-align: center;
@@ -185,6 +190,7 @@ body {
 .header-button:hover,
 .header-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .header-button:active {
@@ -213,7 +219,7 @@ body {
   background-image: url("../images/vectors//vector.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 75px;
+  height: 82px;
 }
 
 .main-message {
@@ -223,7 +229,11 @@ body {
   color: #000000;
   text-align: center;
   margin: 0;
+}
 
+.title {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list {
@@ -251,7 +261,17 @@ body {
   justify-content: center;
   width: 400px;
   min-height: 384px;
-  padding: 30px;
+  padding: 92px 85px 111px 85px;
+}
+
+.advantages-wrapper-services {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 384px;
+  padding: 80px 85px 80px 85px;
 }
 
 .advantages-icon {
@@ -263,6 +283,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
   margin-bottom: 60px;
   font-weight: 700;
   font-size: 24px;
@@ -335,8 +356,13 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: none;
-  margin-bottom: 54px;
+  margin-top: 23px;
   color: #333333;
+}
+
+.subtitle-appointment {
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
 
 .advantages-description {
@@ -351,10 +377,14 @@ body {
 
 .subtitle-white {
   color: #FFFFFF;
+  margin-top: 22px;
+  margin-bottom: 54px;
 }
 
 .subtitle-black {
   color: #000000;
+  margin-top: 22px;
+  margin-bottom: 54px;
 }
 
 .appointment {
@@ -408,6 +438,7 @@ body {
 .newsletter-button:hover,
 .newsletter-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .newsletter-button:active {
@@ -430,9 +461,14 @@ body {
   color: rgba(0, 0, 0, 0.6);
   border: none;
   width: 452px;
-  padding: 14px 20px;
   border-radius: 4px 0 0 4px;
+  padding-left: 14px;
   margin: 0;
+}
+
+.newsletter-email::placeholder {
+  color: #000000;
+  opacity: 60%;
 }
 
 .newsletter-email::placeholder {
@@ -446,6 +482,14 @@ body {
 
 .newsletter-email:focus {
   outline: none;
+  border: 3px solid #83B3D3;
+  padding-left: 11px;
+}
+
+.newsletter-email:active {
+  outline: none;
+  border: 2px solid #3F5E72;
+  padding-left: 12px;
 }
 
 .newsletter-form {
@@ -480,7 +524,7 @@ body {
 
 
 .sedona-hotels-filter {
-  padding: 33px 70px 70px 70px;
+  padding: 32px 70px 70px 70px;
   max-width: 1200px;
   min-height: 412px;
   background-image: url("../images/catalog/catalog-background.jpg");
@@ -563,6 +607,11 @@ body {
   color: #FFFFFF;
 }
 
+.breadcrubms-link:focus {
+  outline: none;
+  opacity: 60%;
+}
+
 .price-slider {
   max-width: 290px;
 }
@@ -634,7 +683,7 @@ body {
   position: relative;
   width: 288px;
   height: 4px;
-  margin-top: 42px;
+  margin-top: 43px;
   background-color: rgb(255, 255, 255, 0.3);
 }
 
@@ -746,11 +795,11 @@ body {
   display: block;
   font: inherit;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 .search-filter-item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .search-filter-title {
@@ -804,7 +853,7 @@ fieldset {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 4px;
@@ -821,6 +870,10 @@ fieldset {
 .button-hotels-search:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-hotels-search:disabled {
+  background-color: #E5E5E5;
 }
 
 .button-hotels-search-reset {
@@ -850,6 +903,7 @@ fieldset {
 .button-hotels-search-reset:focus {
   border: 3px solid #83B3D3;
   padding-top: 5px;
+  padding-bottom: 5px;
   outline: none;
 }
 
@@ -878,7 +932,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 70px 40px 70px;
+  padding: 49px 70px 37px 70px;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -1113,7 +1167,11 @@ fieldset {
   height: 20px;
   background: url(../images/vectors/star.svg);
   background-repeat: space;
-  align-self: center;
+  margin-top: 10px;
+}
+
+.hotel-stars-raiting.five-stars {
+  width: 107px;
 }
 
 .hotel-stars-raiting.four-stars {
@@ -1128,8 +1186,8 @@ fieldset {
   width: 42px;
 }
 
-.hotel-stars-raiting.five-stars {
-  width: 107px;
+.hotel-stars-raiting.one-star {
+  width: 25px;
 }
 
 .hotels {
@@ -1138,6 +1196,7 @@ fieldset {
 }
 
 .pagination-section {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -1146,6 +1205,17 @@ fieldset {
   min-width: 1060px;
 
   list-style-type: none;
+}
+
+.pagination-section::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1060px;
+  height: 1px;
+  top: -40px;
+  background-color: #E6E6E6;
+  z-index: 1;
 }
 
 .pagination-item {
@@ -1160,7 +1230,8 @@ fieldset {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  padding: 12px 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #FFFFFF;
   background-color: #82B3D3;
   min-width: 60px;
@@ -1221,7 +1292,10 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   width: 1060px;
-  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .footer-social-list {
@@ -1231,13 +1305,12 @@ fieldset {
   list-style-type: none;
   margin: 0;
   max-width: 200px;
-  padding-top: 57px;
-  padding-bottom: 47px;
-  padding-left: 0;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
-.footer-social-item {
-  margin-right: 25px;
+.footer-social-item:not(:last-child) {
+  margin-right: 26px;
 }
 
 .telegram-button {
@@ -1252,9 +1325,7 @@ fieldset {
   fill: #82B3D3;
 }
 
-.footer-social-item:last-child {
-  margin-right: 0;
-}
+
 
 .footer-social-icon:hover {
   fill: #68A2CA;
@@ -1275,15 +1346,13 @@ fieldset {
 
 .footer-phone {
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
   max-width: 450px;
 }
 
 .contacts-phone {
   font-weight: 400;
   font-size: 40px;
-  line-height: 46px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
   color: #000000;
