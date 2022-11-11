@@ -30,8 +30,14 @@ img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 
 .visually-hidden {
   position: absolute;
@@ -44,11 +50,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-img {
-  max-width: 100%;
-  object-fit: contain;
 }
 
 body {
@@ -838,11 +839,7 @@ body {
   margin-bottom: 32px;
 }
 
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 .infrastructure-accomodation {
   display: flex;
