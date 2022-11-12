@@ -253,8 +253,8 @@ body {
   padding: 0;
   min-height: 384px;
 }
-.advantages-item img {
-  vertical-align: bottom;
+.advantages-img {
+  display: flex;
 }
 
 .advantages-wrapper {
