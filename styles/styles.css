@@ -253,6 +253,7 @@ body {
   padding: 0;
   min-height: 384px;
 }
+
 .advantages-img {
   display: flex;
 }
@@ -761,7 +762,6 @@ body {
 .custom-checkbox + label:active::before,
 .search-filter-label:active {
   opacity: 30%;
-  ;
 }
 
 .custom-radio {
@@ -799,7 +799,6 @@ body {
 .custom-radio + label:hover::before,
 .search-filter-label:hover {
   opacity: 60%;
-  ;
 }
 
 .custom-radio:focus + label::before,
