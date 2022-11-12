@@ -254,7 +254,7 @@ body {
   min-height: 384px;
 }
 .advantages-item img {
-  float: left;
+  vertical-align: bottom;
 }
 
 .advantages-wrapper {
