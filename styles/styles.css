@@ -240,7 +240,6 @@ body {
 
 .advantages-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -248,12 +247,14 @@ body {
   list-style-type: none;
 }
 
-
 .advantages-item {
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
+  min-height: 384px;
+}
+.advantages-img {
+  display: flex;
 }
 
 .advantages-wrapper {
