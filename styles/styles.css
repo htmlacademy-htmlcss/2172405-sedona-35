@@ -1020,6 +1020,10 @@ body {
   margin-bottom: 5px;
 }
 
+.sorting-view-button-current {
+  border: solid 2px #000000;
+}
+
 .sorting-view-button:first-child {
   margin-left: 0;
 }
@@ -1042,14 +1046,17 @@ body {
   background-position: center;
 }
 
-.sorting-view-button:hover,
-.sorting-view-button:active {
+.sorting-view-button:hover {
   border-color: #000000;
 }
 
 .sorting-view-button:focus {
   border-color: #68a2ca;
   outline: none;
+}
+
+.sorting-view-button:active {
+  border-color: #000000;
 }
 
 .sorting-view-button:last-child {
