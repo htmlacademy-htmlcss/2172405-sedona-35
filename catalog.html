@@ -97,13 +97,13 @@
                   <legend class="search-filter-title">Тип Жилья:</legend>
                   <ul class="search-filter-list">
                     <li class="search-filter-item">
-                      <input type="radio" class="custom-radio" id="hotel" name="accomodation" checked>
+                      <input type="radio" class="custom-radio" id="hotel" name="accomodation" value="hotel" checked>
                       <label class="search-filter-label" for="hotel">Гостиница</label>
                     <li class="search-filter-item">
-                      <input type="radio" class="custom-radio" id="motel" name="accomodation">
+                      <input type="radio" class="custom-radio" id="motel" name="accomodation" value="motel">
                       <label class="search-filter-label" for="motel">Мотель</label>
                     <li class="search-filter-item">
-                      <input type="radio" class="custom-radio" id="apartments" name="accomodation">
+                      <input type="radio" class="custom-radio" id="apartments" name="accomodation" value="apartments">
                       <label class="search-filter-label" for="apartments">Апартаменты</label>
                     </li>
                   </ul>
@@ -122,8 +122,12 @@
                   <div class="range-slider">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 208px">
-                        <button type="button" class="range-toggle toggle-min"></button>
-                        <button type="button" class="range-toggle toggle-max"></button>
+                        <button type="button" class="range-toggle toggle-min">
+                          <span class="visually-hidden">цена минимум.</span>
+                        </button>
+                        <button type="button" class="range-toggle toggle-max">
+                          <span class="visually-hidden">цена максимум.</span>
+                        </button>
                       </div>
                     </div>
                   </div>
