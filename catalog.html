@@ -13,7 +13,7 @@
       <header class="main-header">
         <a href="index.html">
           <div>
-            <img class="main-header-logo" src="images/Vectors/logo-sedona.svg" width="140" height="70"
+            <img class="main-header-logo" src="images/vectors/logo-sedonaa.svg" width="140" height="70"
               alt="Лого города Седона.">
           </div>
         </a>
@@ -52,7 +52,7 @@
           </ul>
         </nav>
       </header>
-      <main class="hotels-catalog">
+      <main class="main-container">
         <section class="sedona-hotels-filter">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -97,13 +97,13 @@
                   <legend class="search-filter-title">Тип Жилья:</legend>
                   <ul class="search-filter-list">
                     <li class="search-filter-item">
-                      <input type="radio" class="custom-radio" id="hotel" name="accomodation" checked>
+                      <input type="radio" class="custom-radio" id="hotel" name="accomodation" value="hotel" checked>
                       <label class="search-filter-label" for="hotel">Гостиница</label>
                     <li class="search-filter-item">
-                      <input type="radio" class="custom-radio" id="motel" name="accomodation">
+                      <input type="radio" class="custom-radio" id="motel" name="accomodation" value="motel">
                       <label class="search-filter-label" for="motel">Мотель</label>
                     <li class="search-filter-item">
-                      <input type="radio" class="custom-radio" id="apartments" name="accomodation">
+                      <input type="radio" class="custom-radio" id="apartments" name="accomodation" value="apartments">
                       <label class="search-filter-label" for="apartments">Апартаменты</label>
                     </li>
                   </ul>
@@ -122,8 +122,12 @@
                   <div class="range-slider">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 208px">
-                        <button type="button" class="range-toggle toggle-min"></button>
-                        <button type="button" class="range-toggle toggle-max"></button>
+                        <button type="button" class="range-toggle toggle-min">
+                          <span class="visually-hidden">цена минимум.</span>
+                        </button>
+                        <button type="button" class="range-toggle toggle-max">
+                          <span class="visually-hidden">цена максимум.</span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -251,7 +255,7 @@
           <div class="newsletter-form-button">
             <div class="newsletter-form-button">
               <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email"></label>
+                <label class="visually-hidden" for="newsletter-email">адрес электронной почты.</label>
                 <input class="newsletter-email newsletter-email-gray" placeholder="Ваш e-mail" type="email"
                   name="newsletter-email" id="newsletter-email" required>
                   <button class="newsletter-button subscribe-button" type="submit">Подписаться</button>
@@ -259,6 +263,7 @@
             </div>
           </div>
         </section>
+      </main>
         <footer class="main-footer">
           <div class="main-footer-container">
             <section class="footer-social">
@@ -317,7 +322,6 @@
             </section>
           </div>
         </footer>
-      </main>
     </div>
   </body>
 </html>
