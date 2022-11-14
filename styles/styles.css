@@ -160,10 +160,6 @@ body {
   position: relative;
 }
 
-.navigation-item {
-  display: flex;
-}
-
 .navigation-link-current::before {
   position: absolute;
   top: auto;
