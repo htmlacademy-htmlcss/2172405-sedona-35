@@ -139,7 +139,7 @@ body {
 
 .navigation-link {
   position: relative;
-  display: block;
+  display: flex;
   padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
@@ -160,6 +160,10 @@ body {
   position: relative;
 }
 
+.navigation-item {
+  display: flex;
+}
+
 .navigation-link-current::before {
   position: absolute;
   top: auto;
@@ -168,7 +172,6 @@ body {
   width: calc(100% - 32px);
   bottom: 0;
   background-color: #756257;
-  z-index: 1;
 }
 
 .navigation-icon {
@@ -650,7 +653,7 @@ body {
 
 
 .sedona-hotels-filter {
-  padding: 32px 70px 70px 70px;
+  padding: 33px 70px 70px 70px;
   max-width: 1200px;
   min-height: 412px;
   background-image: url("../images/catalog/catalog-background.jpg");
@@ -664,15 +667,15 @@ body {
 .inner-header {
   width: 1086px;
   margin: 0;
+  padding-top: 2px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 78px;
+  line-height: 76px;
   text-align: left;
   text-transform: none;
-
   margin: 0;
   padding: 0;
 }
@@ -1651,6 +1654,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  overflow: auto;
 }
 
 .modal-container-close {
