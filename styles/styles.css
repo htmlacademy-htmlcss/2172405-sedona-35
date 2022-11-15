@@ -54,20 +54,12 @@ img {
 body {
   min-width: 1200px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   margin: 0;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #f2f2f2;
-
 }
 
 .container {
@@ -514,7 +506,7 @@ body {
   background-size: 100% auto;
   background-position: top;
   background-repeat: no-repeat;
-  padding: 94px 258px 104px 258px;
+  padding: 95px 258px 104px 258px;
 }
 
 .newsletter-button {
