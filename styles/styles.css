@@ -252,7 +252,7 @@ body {
 }
 
 .hero-bottom-zigzag {
-  background-image: url("../images/vectors//vector.svg");
+  background-image: url("../images/temps/vector.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 79px;
@@ -346,7 +346,7 @@ body {
 .advantages-house {
   width: 75px;
   height: 72px;
-  background-image: url("../images/vectors/house.svg");
+  background-image: url("../images/temps/house.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 28px;
@@ -355,7 +355,7 @@ body {
 .advantages-food {
   width: 74px;
   height: 70px;
-  background-image: url("../images/vectors/food.svg");
+  background-image: url("../images/temps/food.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 29px;
@@ -364,7 +364,7 @@ body {
 .advantages-souvenirs {
   width: 64px;
   height: 76px;
-  background-image: url("../images/vectors/souvenirs.svg");
+  background-image: url("../images/temps/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 25px;
@@ -715,7 +715,7 @@ body {
   content: " ";
   width: 6px;
   height: 10px;
-  background-image: url("../images/vectors/breadcrumbs-arrow.svg");
+  background-image: url("../images/temps/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 11px;
@@ -915,7 +915,7 @@ body {
 }
 
 .custom-checkbox:checked + label::before {
-  background-image: url("../images/vectors/check-icon.svg");
+  background-image: url("../images/temps/check-icon.svg");
 }
 
 .custom-checkbox + label:hover::before,
@@ -1187,7 +1187,7 @@ body {
 .sorting-list::before {
   position: absolute;
   content: "";
-  background-image: url("../images/vectors/sorting-arrow.svg");
+  background-image: url("../images/temps/sorting-arrow.svg");
   width: 12px;
   height: 7px;
   top: 20px;
@@ -1228,19 +1228,19 @@ body {
 }
 
 .sorting-view-button.view-icons {
-  background-image: url("../images/vectors/view-iconss.svg");
+  background-image: url("../images/temps/view-iconss.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .sorting-view-button.view-list {
-  background-image: url("../images/vectors/view-listt.svg");
+  background-image: url("../images/temps/view-listt.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .sorting-view-button.view-gallery {
-  background-image: url("../images/vectors/view-galleryy.svg");
+  background-image: url("../images/temps/view-galleryy.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1399,7 +1399,7 @@ body {
   padding: 0;
   max-width: 143px;
   height: 20px;
-  background: url("../images/vectors/star.svg");
+  background: url("../images/temps/star.svg");
   background-repeat: space;
   margin-top: 10px;
 }
@@ -1679,7 +1679,7 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/vectors/close.svg");
+  background-image: url("../images/temps/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1700,7 +1700,7 @@ body {
 }
 
 .modal-close-button:disabled {
-  background-image: url("../images/vectors/close-gray.svg");
+  background-image: url("../images/temps/close-gray.svg");
 }
 
 .modal-title {
@@ -1812,7 +1812,7 @@ body {
 }
 
 .input-field-arrival-departure {
-  background-image: url("../images/vectors/date.svg");
+  background-image: url("../images/temps/date.svg");
   background-repeat: no-repeat;
   background-position: 400px;
   width: 440px;
@@ -2032,7 +2032,7 @@ body {
 
 .tooltip-text::after {
   content: "";
-  background-image: url("../images/vectors/tooltip-triangle.svg");
+  background-image: url("../images/temps/tooltip-triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
