@@ -337,6 +337,7 @@ body {
   width: 400px;
   min-height: 384px;
   padding: 80px 85px 80px 85px;
+
 }
 
 .advantages-icon {
@@ -344,30 +345,22 @@ body {
 }
 
 .advantages-house {
-  width: 75px;
-  height: 72px;
   background-image: url("../images/vectors/house.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 28px;
+  background-position: center 80px;
 }
 
+
 .advantages-food {
-  width: 74px;
-  height: 70px;
   background-image: url("../images/vectors/food.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 29px;
+  background-position: center 81px;
 }
 
 .advantages-souvenirs {
-  width: 64px;
-  height: 76px;
   background-image: url("../images/vectors/souvenirs.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 25px;
+  background-position: center 78px;
 }
 
 .advantages-title {
@@ -383,11 +376,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  margin-bottom: 61px;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-title.advantages-title-services {
+  padding-top: 100px;
 }
 
 .advantages-title.advantages-title-services::after {
@@ -397,7 +394,7 @@ body {
 .advantages-title::after {
   content: "";
   position: absolute;
-  bottom: -30px;
+  bottom: -32px;
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
